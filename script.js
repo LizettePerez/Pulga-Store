@@ -330,14 +330,13 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
       const form = event.target;
       if (form.checkValidity()) {
-        alert("Gracias por contactarnos, te responderemos a la brevedad")
+        alert("Gracias por contactarnos, te responderemos a la brevedad");
         form.reset();
       } else {
         form.classList.add("was-validated");
       }
     });
   }
-
 
   const fechaInput = document.getElementById("fechaVencimiento");
   fechaInput.addEventListener("input", function () {
@@ -357,7 +356,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (value.length > 16) value = value.slice(0, 16);
     this.value = value;
   });
-
 
   const cvvInput = document.getElementById("cvv");
   cvvInput.addEventListener("input", function () {
@@ -379,7 +377,7 @@ function volverDatos() {
   window.location.href = "datos-personales.html";
 }
 
-function irDetalle(){
+function irDetalle() {
   window.location.href = "detalle.html";
 }
 
@@ -389,4 +387,24 @@ document.addEventListener("DOMContentLoaded", function () {
   renderizarProductos();
   mostrarResumenCompra();
   mostrarResumenCompraFinal();
+});
+
+// Inicialización  Fancybox
+$(document).ready(function () {
+  if (typeof Fancybox !== "undefined") {
+    Fancybox.bind("[data-fancybox]", {
+      Toolbar: {
+        display: {
+          left: ["infobar"],
+          middle: ["zoomIn", "zoomOut", "rotateCCW", "rotateCW"],
+          right: ["slideshow", "thumbs", "close"],
+        },
+      },
+      closeButton: true,
+      keyboard: true,
+      wheel: false,
+      showClass: false,
+      hideClass: false,
+    });
+  }
 });

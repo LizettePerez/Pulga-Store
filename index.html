@@ -17,6 +17,10 @@
     rel="stylesheet">
 
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
 </head>
 
 <body>
@@ -99,7 +103,8 @@
           <h2 class="header-title">Realza tu mirada<br>con naturalidad</h2>
           <p class="header-text">Diseñados para integrarse con<br>el color natural de tu ojo</p>
           <div class="header-btn d-flex justify-content-center">
-            <button type="button" class="btn btn-dark rounded-pill btn-lg" onclick="comprarLista()">Comprar ahora</button>
+            <button type="button" class="btn btn-dark rounded-pill btn-lg" onclick="comprarLista()">Comprar
+              ahora</button>
           </div>
         </div>
         <div class="col-lg-7 col-md-6 col-12 order-1 order-md-2" style="padding-right: 0px; padding-left: 0px;">
@@ -154,15 +159,150 @@
       </div>
     </section>
 
+    <section class="container-fluid d-flex justify-content-center align-items-center mt-5">
+      <img src="./assets/img/icon/Vector 20.png">
+    </section>
+
+    <section class="container-fluid section-5 py-5">
+      <div class="container text-center">
+        <h2 class="titulo mb-4">Productos destacados</h2>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100">
+              <!-- Imagen principal clickeable -->
+              <a href="./assets/img/modelos/Angeles N/AngelesNBrown.webp" data-fancybox="angeles-n-brown"
+                data-caption="Angeles N Brown - Vista Principal">
+                <img src="./assets/img/modelos/Angeles N/AngelesNBrown.webp" class="card-img-top" alt="Angeles N Brown"
+                  style="cursor: pointer;">
+              </a>
+
+              <!-- Enlaces ocultos para las imágenes adicionales -->
+              <a href="./assets/img/modelos/Angeles N/AngelesNBrown-1.webp" data-fancybox="angeles-n-brown"
+                data-caption="Angeles N Brown" style="display: none;"></a>
+
+              <a href="./assets/img/modelos/Angeles N/AngelesNBrown-2.webp" data-fancybox="angeles-n-brown"
+                data-caption="Angeles N Brown" style="display: none;"></a>
+
+              <div class="card-body d-flex align-items-center justify-content-center">
+                <div class="d-flex align-items-center justify-content-center w-100">
+                  <div class="me-3">
+                    <img src="./assets/img/icon-eyes/eye-brown.png" width="50">
+                  </div>
+                  <div class="text-center">
+                    <h5 class="section-title mb-1">Angeles N Brown</h5>
+                    <p class="section-text mb-0">$25.000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100">
+              <!-- Imagen principal clickeable -->
+              <a href="./assets/img/modelos/Angeles N/AngelesNBlue.webp" data-fancybox="angeles-n-blue"
+                data-caption="Angeles N Blue - Vista Principal">
+                <img src="./assets/img/modelos/Angeles N/AngelesNBlue.webp" class="card-img-top" alt="Angeles N Blue"
+                  style="cursor: pointer;">
+              </a>
+
+              <!-- Enlaces ocultos para las imágenes adicionales -->
+              <a href="./assets/img/modelos/Angeles N/AngelesNBlue-1.webp" data-fancybox="angeles-n-blue"
+                data-caption="Angeles N Blue" style="display: none;"></a>
+
+              <a href="./assets/img/modelos/Angeles N/AngelesNBlue-2.webp" data-fancybox="angeles-n-blue"
+                data-caption="Angeles N Blue" style="display: none;"></a>
+
+              <div class="card-body d-flex align-items-center justify-content-center">
+                <div class="d-flex align-items-center justify-content-center w-100">
+                  <div class="me-3">
+                    <img src="./assets/img/icon-eyes/eye-blue.png" width="50">
+                  </div>
+                  <div class="text-center">
+                    <h5 class="section-title mb-1">Angeles N Blue</h5>
+                    <p class="section-text mb-0">$25.000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100">
+              <!-- Imagen principal clickeable -->
+              <a href="./assets/img/modelos/Angeles N/AngelesNGray.webp" data-fancybox="angeles-n-gray"
+                data-caption="Angeles N Gray - Vista Principal">
+                <img src="./assets/img/modelos/Angeles N/AngelesNGray.webp" class="card-img-top" alt="Angeles N Gray"
+                  style="cursor: pointer;">
+              </a>
+
+              <!-- Enlaces ocultos para las imágenes adicionales -->
+              <a href="./assets/img/modelos/Angeles N/AngelesNGray-1.webp" data-fancybox="angeles-n-gray"
+                data-caption="Angeles N Gray" style="display: none;"></a>
+
+              <a href="./assets/img/modelos/Angeles N/AngelesNGray-2.webp" data-fancybox="angeles-n-gray"
+                data-caption="Angeles N Gray" style="display: none;"></a>
+
+              <div class="card-body d-flex align-items-center justify-content-center">
+                <div class="d-flex align-items-center justify-content-center w-100">
+                  <div class="me-3">
+                    <img src="./assets/img/icon-eyes/eye-grey.png" width="50">
+                  </div>
+                  <div class="text-center">
+                    <h5 class="section-title mb-1">Angeles N Gray</h5>
+                    <p class="section-text mb-0">$25.000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100">
+              <!-- Imagen principal clickeable -->
+              <a href="./assets/img/modelos/Angeles N/AngelesNViolet.webp" data-fancybox="angeles-n-violet"
+                data-caption="Angeles N Violet - Vista Principal">
+                <img src="./assets/img/modelos/Angeles N/AngelesNViolet.webp" class="card-img-top" alt="Angeles N Violet"
+                  style="cursor: pointer;">
+              </a>
+
+              <!-- Enlaces ocultos para las imágenes adicionales -->
+              <a href="./assets/img/modelos/Angeles N/AngelesNViolet-1.webp" data-fancybox="angeles-n-violet"
+                data-caption="Angeles N Gray" style="display: none;"></a>
+
+
+              <div class="card-body d-flex align-items-center justify-content-center">
+                <div class="d-flex align-items-center justify-content-center w-100">
+                  <div class="me-3">
+                    <img src="./assets/img/icon-eyes/eye-violet.png" width="50">
+                  </div>
+                  <div class="text-center">
+                    <h5 class="section-title mb-1">Angeles N Violet</h5>
+                    <p class="section-text mb-0">$25.000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="container-fluid d-flex justify-content-center align-items-center mb-5">
+      <img src="./assets/img/icon/Vector 20.png">
+    </section>
 
     <section class="container-fluid section-4">
       <div class="container text-center">
-        <img src="./assets/img/icon/Vector 20.png">
         <h2 class="titulo">Sobre nosotros</h2>
         <p>Ofrecemos lentes de contacto de aspecto natural, tanto cosméticos como ópticos, diseñados para realzar la
           mirada con un efecto sutil y elegante. Nuestros lentes combinan comodidad y seguridad, permitiendo a los
           clientes elegir entre una amplia gama de colores y opciones con o sin graduación.</p>
-          <img src="./assets/img/icon/Vector 20.png">
+        <img src="./assets/img/icon/Vector 20.png">
       </div>
     </section>
 
