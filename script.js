@@ -339,30 +339,36 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const fechaInput = document.getElementById("fechaVencimiento");
-  fechaInput.addEventListener("input", function () {
-    let value = this.value.replace(/\D/g, "");
-    if (value.length > 4) value = value.slice(0, 4);
+  if (fechaInput) {
+    fechaInput.addEventListener("input", function () {
+      let value = this.value.replace(/\D/g, "");
+      if (value.length > 4) value = value.slice(0, 4);
 
-    if (value.length >= 3) {
-      value = value.slice(0, 2) + "/" + value.slice(2);
-    }
+      if (value.length >= 3) {
+        value = value.slice(0, 2) + "/" + value.slice(2);
+      }
 
-    this.value = value;
-  });
+      this.value = value;
+    });
+  }
 
   const numeroTarjetaInput = document.getElementById("numeroTarjeta");
-  numeroTarjetaInput.addEventListener("input", function () {
-    let value = this.value.replace(/\D/g, "");
-    if (value.length > 16) value = value.slice(0, 16);
-    this.value = value;
-  });
+  if (numeroTarjetaInput) {
+    numeroTarjetaInput.addEventListener("input", function () {
+      let value = this.value.replace(/\D/g, "");
+      if (value.length > 16) value = value.slice(0, 16);
+      this.value = value;
+    });
+  }
 
   const cvvInput = document.getElementById("cvv");
-  cvvInput.addEventListener("input", function () {
-    let value = this.value.replace(/\D/g, "");
-    if (value.length > 3) value = value.slice(0, 3);
-    this.value = value;
-  });
+  if (cvvInput) {
+    cvvInput.addEventListener("input", function () {
+      let value = this.value.replace(/\D/g, "");
+      if (value.length > 3) value = value.slice(0, 3);
+      this.value = value;
+    });
+  }
 });
 
 function irDireccion() {
